@@ -1,0 +1,339 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #edebeb;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  position: relative;
+  padding: 20px;
+  width: 600px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#mainHeading{
+  text-align: center;
+}
+
+#label1{
+  position: absolute;
+  top: 120px;
+  left: 35px;
+  font-size: 17px;
+}
+
+#label2{
+  position: absolute;
+  top: 120px;
+  left: 360px;
+  font-size: 17px;
+}
+
+#label3{
+  position: absolute;
+  top: 220px;
+  left: 35px;
+  font-size: 17px;
+}
+
+#label4{
+  position: absolute;
+  top: 220px;
+  left: 360px;
+  font-size: 17px;
+}
+
+
+#carTypeMenu{
+  position: absolute;
+  top: 150px;
+  left: 35px;
+  width: 250px;
+  height: 40px;
+  text-indent: 10px;
+  border-radius: 3px;
+}
+
+#leasePeriodMenu{
+  position: absolute;
+  top: 150px;
+  left: 360px;
+  width: 250px;
+  height: 40px;
+  text-indent: 10px;
+  border-radius: 3px;
+}
+
+#carValue{
+  position: absolute;
+  top: 250px;
+  left: 35px;
+  width: 250px;
+  height: 40px;
+  text-indent: 10px;
+  border-radius: 3px;
+  border-width: 1px;
+}
+
+#downPayment{
+  position: absolute;
+  top: 250px;
+  left: 360px;
+  width: 250px;
+  height: 40px;
+  text-indent: 10px;
+  border-radius: 3px;
+  border-width: 1px;
+}
+
+#carValueSlider{
+  position: absolute;
+  top: 310px;
+  left: 35px;
+  width: 250px;
+  accent-color: rgb(0, 127, 255);
+}
+
+#downPaymentSlider{
+  position: absolute;
+  top: 310px;
+  left: 360px;
+  width: 250px;
+  accent-color: rgb(0, 127, 255);
+}
+
+#horizontalLine{
+  position: relative;
+  top: 270px;
+  width: 570px;
+}
+
+#subheading{
+  text-align: center;
+  position: relative;
+  top: 270px;
+}
+
+#verticalLine{
+  transform: rotate(90deg);
+  width: 65px;
+  position: relative;
+  top: 307px;
+  height: 0.4px;
+  background-color: black;
+}
+
+#label5{
+  position: absolute;
+  top: 83%;
+  left: 5%;
+}
+
+#label6{
+  position: absolute;
+  top: 88.7%;
+  left: 5%;
+}
+
+#label7{
+  position: absolute;
+  top: 83%;
+  left: 54.5%
+}
+
+#label8{
+  position: absolute;
+  top: 88.7%;
+  left: 54.5%
+}
+
+#totalLeasingCostResult{
+  position: absolute;
+  top: 83%;
+  left: 28%;
+}
+
+#downPaymentResult{
+  position: absolute;
+  top: 88.7%;
+  left: 24%;
+}
+
+#monthlyInstallmentResult{
+  position: absolute;
+  top: 83%;
+  left: 78%;
+}
+
+#interestRateResult{
+  position: absolute;
+  top: 88.7%;
+  left: 71%;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    position: relative;
+    padding: 20px;
+    width: 300px;
+    height: 770px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #label1{
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    font-size: 17px;
+  }
+
+  #carTypeMenu{
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    width: 395px;
+    height: 37px;
+    text-indent: 10px;
+    border-radius: 3px;
+  }
+
+  #label3{
+    position: absolute;
+    top: 190px;
+    left: 20px;
+    font-size: 17px;
+  }
+
+  #carValue{
+    position: absolute;
+    top: 220px;
+    left: 20px;
+    width: 390px;
+    height: 32px;
+    text-indent: 10px;
+    border-radius: 3px;
+  }
+
+  #carValueSlider{
+    position: absolute;
+    top: 290px;
+    left: 20px;
+    width: 390px;
+    accent-color: rgb(0, 127, 255);
+  }
+
+  #label2{
+    position: absolute;
+    top: 350px;
+    left: 20px;
+    font-size: 17px;
+  }
+
+  #leasePeriodMenu{
+    position: absolute;
+    top: 380px;
+    left: 20px;
+    width: 395px;
+    height: 37px;
+    text-indent: 10px;
+    border-radius: 3px;
+  }
+
+  #label4{
+    position: absolute;
+    top: 440px;
+    left: 20px;
+    font-size: 17px;
+  }
+
+  #downPayment{
+    position: absolute;
+    top: 470px;
+    left: 20px;
+    width: 390px;
+    height: 32px;
+    text-indent: 10px;
+    border-radius: 3px;
+  }
+
+  #downPaymentSlider{
+    position: absolute;
+    top: 540px;
+    left: 20px;
+    width: 390px;
+    accent-color: rgb(0, 127, 255);
+  }
+
+  #horizontalLine{
+    position: relative;
+    top: 500px;
+    width: 390px;
+  }
+  
+  #subheading{
+    text-align: center;
+    position: relative;
+    top: 500px;
+  }
+  
+  #verticalLine{
+    display: none;
+  }
+  
+  #label5{
+    position: absolute;
+    top: 82.65%;
+    left: 4.7%;
+  }
+  
+  #label6{
+    position: absolute;
+    top: 85.65%;
+    left: 4.7%;
+  }
+  
+  #label7{
+    position: absolute;
+    top: 91.32%;
+    left: 4.7%;
+  }
+  
+  #label8{
+    position: absolute;
+    top: 94.52%;
+    left: 4.7%;
+  }
+  
+  #totalLeasingCostResult{
+    position: absolute;
+    top: 82.65%;
+    left: 38%;
+  }
+  
+  #downPaymentResult{
+    position: absolute;
+    top: 85.65%;
+    left: 33%;
+  }
+  
+  #monthlyInstallmentResult{
+    position: absolute;
+    top: 91.32%;
+    left: 39.5%;
+  }
+  
+  #interestRateResult{
+    position: absolute;
+    top: 94.52%;
+    left: 29%;
+  }
+}
