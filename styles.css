@@ -189,10 +189,13 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
+<<<<<<< HEAD
   #mainHeading{
     font-size: 28px;
   }
 
+=======
+>>>>>>> master
   #label1{
     position: absolute;
     top: 100px;
@@ -204,7 +207,11 @@ body {
     position: absolute;
     top: 130px;
     left: 20px;
+<<<<<<< HEAD
     width: 302px;
+=======
+    width: 395px;
+>>>>>>> master
     height: 37px;
     text-indent: 10px;
     border-radius: 3px;
@@ -221,7 +228,11 @@ body {
     position: absolute;
     top: 220px;
     left: 20px;
+<<<<<<< HEAD
     width: 298px;
+=======
+    width: 390px;
+>>>>>>> master
     height: 32px;
     text-indent: 10px;
     border-radius: 3px;
@@ -229,24 +240,40 @@ body {
 
   #carValueSlider{
     position: absolute;
+<<<<<<< HEAD
     top: 285px;
     left: 20px;
     width: 302px;
+=======
+    top: 290px;
+    left: 20px;
+    width: 390px;
+>>>>>>> master
     accent-color: rgb(0, 127, 255);
   }
 
   #label2{
     position: absolute;
+<<<<<<< HEAD
     top: 340px;
+=======
+    top: 350px;
+>>>>>>> master
     left: 20px;
     font-size: 17px;
   }
 
   #leasePeriodMenu{
     position: absolute;
+<<<<<<< HEAD
     top: 370px;
     left: 20px;
     width: 302px;
+=======
+    top: 380px;
+    left: 20px;
+    width: 395px;
+>>>>>>> master
     height: 37px;
     text-indent: 10px;
     border-radius: 3px;
@@ -254,16 +281,26 @@ body {
 
   #label4{
     position: absolute;
+<<<<<<< HEAD
     top: 430px;
+=======
+    top: 440px;
+>>>>>>> master
     left: 20px;
     font-size: 17px;
   }
 
   #downPayment{
     position: absolute;
+<<<<<<< HEAD
     top: 460px;
     left: 20px;
     width: 298px;
+=======
+    top: 470px;
+    left: 20px;
+    width: 390px;
+>>>>>>> master
     height: 32px;
     text-indent: 10px;
     border-radius: 3px;
@@ -271,22 +308,38 @@ body {
 
   #downPaymentSlider{
     position: absolute;
+<<<<<<< HEAD
     top: 525px;
     left: 20px;
     width: 302px;
+=======
+    top: 540px;
+    left: 20px;
+    width: 390px;
+>>>>>>> master
     accent-color: rgb(0, 127, 255);
   }
 
   #horizontalLine{
+<<<<<<< HEAD
     position: absolute;
     top: 69.5%;
     width: 302px;
+=======
+    position: relative;
+    top: 500px;
+    width: 390px;
+>>>>>>> master
   }
   
   #subheading{
     text-align: center;
     position: relative;
+<<<<<<< HEAD
     top: 66.5%;
+=======
+    top: 500px;
+>>>>>>> master
   }
   
   #verticalLine{
@@ -320,24 +373,40 @@ body {
   #totalLeasingCostResult{
     position: absolute;
     top: 82.65%;
+<<<<<<< HEAD
     left: 47%;
+=======
+    left: 38%;
+>>>>>>> master
   }
   
   #downPaymentResult{
     position: absolute;
     top: 85.65%;
+<<<<<<< HEAD
     left: 40%;
+=======
+    left: 33%;
+>>>>>>> master
   }
   
   #monthlyInstallmentResult{
     position: absolute;
     top: 91.32%;
+<<<<<<< HEAD
     left: 49%;
+=======
+    left: 39.5%;
+>>>>>>> master
   }
   
   #interestRateResult{
     position: absolute;
     top: 94.52%;
+<<<<<<< HEAD
     left: 35%;
+=======
+    left: 29%;
+>>>>>>> master
   }
 }

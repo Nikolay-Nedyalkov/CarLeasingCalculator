@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const monthlyInstallmentResult = document.getElementById('monthlyInstallmentResult');
   const interestRateResult = document.getElementById('interestRateResult');
 
+<<<<<<< HEAD
   function calculateLeasingDetails() {
     carValueInput.style.color = 'black';
     downPaymentInput.style.color = 'black';
@@ -60,6 +61,40 @@ document.addEventListener('DOMContentLoaded', function() {
       totalLeasingCostResult.textContent = totalLeasingCost.toLocaleString('en-US', { style: 'currency', currency: 'EUR' });
     }
   }
+=======
+  async function calculateLeasingDetails() {
+    carValueInput.style.color = 'black';
+    downPaymentInput.style.color = 'black';
+  
+    let carValue = parseFloat(carValueInput.value);
+    let downPaymentPercent = parseInt(downPaymentInput.value);
+    let leasePeriod = parseInt(leasePeriodMenu.value);
+    let carType = carTypeMenu.value;
+  
+    if (isNaN(carValue) || carValue < 10000 || carValue > 200000) {
+      carValueInput.style.color = 'red';
+      return;
+    }
+  
+    if (isNaN(downPaymentPercent) || downPaymentPercent < 10 || downPaymentPercent > 50) {
+      downPaymentInput.style.color = 'red';
+      return;
+    }
+  
+    const response = await fetch('http://localhost:3000/calculate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ carValue, downPaymentPercent, leasePeriod, carType })
+    });
+  
+    const data = await response.json();
+  
+    totalLeasingCostResult.textContent = parseFloat(data.totalLeasingCost).toLocaleString('en-US', { style: 'currency', currency: 'EUR' });
+    downPaymentResult.textContent = parseFloat(data.downPayment).toLocaleString('en-US', { style: 'currency', currency: 'EUR' });
+    monthlyInstallmentResult.textContent = parseFloat(data.monthlyInstallment).toLocaleString('en-US', { style: 'currency', currency: 'EUR' });
+    interestRateResult.textContent = data.interestRate + '%';
+  }  
+>>>>>>> master
   
   carValueInput.addEventListener('input', function() {
     carValueSlider.value = carValueInput.value;
